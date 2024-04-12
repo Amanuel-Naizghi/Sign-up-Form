@@ -30,7 +30,7 @@
                     <p>Lets do this!</p> 
                     <div>
                         <p>
-                            <label for="firstName">First Name</label>
+                            <label for="firstName">First Name *</label>
                             <input type="text" id="firstName" name="firstName" 
                             pattern="((.*[a-z]){3})" 
                             required>
@@ -38,31 +38,29 @@
                         <p>
                             <label for="lastName">Last Name</label>
                             <input type="text" name="lastName" id="lastName" 
-                            pattern="((.*[a-z]){3})" required>
+                            pattern="((.*[a-z]){3})">
                         </p>
                     </div>
                     <div>
                         <p>
-                            <label for="email">Email</label>
+                            <label for="email">Email *</label>
                             <input type="email" id="email" name="email"
                             placeholder="eg: you@mail.com" required>
                         </p>
                         <p>
                             <label for="tel">Phone Number</label>
-                            <input type="number" id="tel" name="phone#"
-                            placeholder="XXX-XXX-XXXX" pattern="(^(\([0-9]{3}\)|[0-9]{3}-)[0-9]{3}-[0-9]{4}$)"
-                            required>
+                            <input type="number" id="tel" name="phone#"> 
                         </p>
                     </div>
                     <div class="password">
                         <p>
-                            <label for="password">Password</label>
+                            <label for="password">Password *</label>
                             <input type="password" id="password" name="password" required>
                             <label id="invalid-password"></label>
                         </p>
                         <p>
-                            <label for="conPassword">Confirm Password</label>
-                            <input type="password" id="conPassword" name="confirmPassword" 
+                            <label for="conPassword">Confirm Password *</label>
+                            <input type="password" id="conPassword" name="confirmPassword"
                             oninput="myFunction()" required>
                         </p>
                     </div>
